@@ -12,6 +12,11 @@ h1{
     padding-top: 10px;
 }
 
+.gameSelection{
+    padding: 5px;
+    margin: 5px;
+}
+
 div{
     text-align: center;
 }
