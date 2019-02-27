@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<link href="base.css" rel="stylesheet" type="text/css">
+<html>
+<head>
+    <title>Steam Libarary Roulette</title>
+    <link rel="shortcut icon" href="https://jaredsrydalch.github.io/SteamLibraryRoulette/favicon.ico"/>
+<script>
+
+function decodeVanityID(vanID){
+    var request = new XMLHttpRequest();
+
+    request.open('GET', 'http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key=DFCF4D7D02947E86C98C11DBEFE29CF6&vanityurl='+vanID, true);
+    request.onload = function () {
+
+    // Begin accessing JSON data here
+        var data = JSON.parse(this.response);
+
+        if (request.status >= 200 && request.status < 400) {
+            console.log(data);
+        } 
+        else {
+            alert("Custom ID does not exist")
+        }
+    }
+
+    request.send();   
+};
+
+function moveToRoulette(steamID){
+    window.location.replace("https://jaredsrydalch.github.io/SteamLibraryRoulette/roulette.html?steamId="+steamID);
+}
+
+
+function submit() {
+    typedID = document.getElementById("idbox").value;
+    typedProfileNum = document.getElementById("profilebox").value;
+    if (!(typedID === '')){
+        decodeVanityID(typedID);
+    }
+    if (!(typedProfileNum === '')){
+        moveToRoulette(typedProfileNum);
+    }
+
+}
+</script>
+</head>
+<body>
+
+<div id="header">
+    <a href="https://jaredsrydalch.github.io/SteamLibraryRoulette/index.html"> <h1 class="homelink"><img src="favicon.ico" width="26" height="26">  STEAM LIBRARY ROULETTE </h1></a>
+        <ul>
+                <li><a  href="https://jaredsrydalch.github.io/SteamLibraryRoulette/index.html">Home</a></li>
+                <li><a class="active" href="https://jaredsrydalch.github.io/SteamLibraryRoulette/identry.html">ID Entry</a></li>
+                <li><a href="https://jaredsrydalch.github.io/SteamLibraryRoulette/roulette.html">Spin</a></li>
+                </ul>
+</div>
+
+<div id="idSubmit">
+
+<h2 class="infoTag">Custom ID: 
+    <a href="javascript:alert('Insert explanation image here (TODO)');" 
+    style="color: gray; font-size: 16px;">What's This?</a>
+</h2>
+
+<h3 class="indent">
+    https://steamcommunity.com/id/ <input id="idbox" class="idbox" type="text">
+</h3>
+
+<h2>- OR -</h2>
+
+<h2 class="infoTag">Profile Number: 
+        <a href="javascript:alert('Insert explanation image here (TODO)');" 
+        style="color: gray; font-size: 16px;">What's This?</a>
+</h2>
+
+<h3 class="indent">
+        https://steamcommunity.com/profile/ <input id="profilebox" class="profilebox" type="text">
+    </h3>
+
+</br>
+</br>
+</br>
+
+<button onclick="moveToRoulette('76561198028888371')">SUBMIT</button>
+</div>
+
+</body>
+</html>
