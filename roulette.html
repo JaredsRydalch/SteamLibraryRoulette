@@ -12,28 +12,28 @@
 <div id="header">
     <a href="https://jaredsrydalch.github.io/SteamLibraryRoulette/index.html"> <h1 class="homelink"><img src="favicon.ico" width="26" height="26">  STEAM LIBRARY ROULETTE </h1></a>
         <ul>
-                <li><a href="https://jaredsrydalch.github.io/SteamLibraryRoulette/index.html">Home</a></li>
-                <li><a class="active" href="https://jaredsrydalch.github.io/SteamLibraryRoulette/roulette.html">Spin</a></li>
+                <li class="navli"><a href="https://jaredsrydalch.github.io/SteamLibraryRoulette/index.html">Home</a></li>
+                <li class="navli"><a class="active" href="https://jaredsrydalch.github.io/SteamLibraryRoulette/roulette.html">Spin</a></li>
                 </ul>
 </div>
 
 <div class="scene">
         <div class="carousel">
-          <div class="carousel__cell">Terraria</div>
-          <div class="carousel__cell">Stellaris</div>
-          <div class="carousel__cell">Sid Meier's Civilization V</div>
-          <div class="carousel__cell">MONSTER HUNTER: WORLD</div>
-          <div class="carousel__cell">The Elder Scrolls V: Skyrim</div>
-          <div class="carousel__cell">Divinity: Original Sin 2</div>
-          <div class="carousel__cell">Rocket League</div>
-          <div class="carousel__cell">Borderlands 2</div>
-          <div class="carousel__cell">Endless Legend</div>
-          <div class="carousel__cell">Portal 2</div>
-          <div class="carousel__cell">Natural Selection 2</div>
-          <div class="carousel__cell">Warlock - Master of the Arcane</div>
-          <div class="carousel__cell">Slay the Spire</div>
-          <div class="carousel__cell">FTL: Faster Than Light</div>
-          <div class="carousel__cell">Cultist Simulator</div>
+          <div class="carousel__cell" id="TerrariaCell">Terraria</div>
+          <div class="carousel__cell" id="StellarisCell">Stellaris</div>
+          <div class="carousel__cell" id="CivCell">Sid Meier's Civilization V</div>
+          <div class="carousel__cell" id="MHWCell">MONSTER HUNTER: WORLD</div>
+          <div class="carousel__cell" id="ESVCell">The Elder Scrolls V: Skyrim</div>
+          <div class="carousel__cell" id="DOS2Cell">Divinity: Original Sin 2</div>
+          <div class="carousel__cell" id="RocketCell">Rocket League</div>
+          <div class="carousel__cell" id="BL2Cell">Borderlands 2</div>
+          <div class="carousel__cell" id="ELCell">Endless Legend</div>
+          <div class="carousel__cell" id="P2Cell">Portal 2</div>
+          <div class="carousel__cell" id="NS2Cell">Natural Selection 2</div>
+          <div class="carousel__cell" id="WMotACell">Warlock - Master of the Arcane</div>
+          <div class="carousel__cell" id="StSCell">Slay the Spire</div>
+          <div class="carousel__cell" id="FTLCell">FTL: Faster Than Light</div>
+          <div class="carousel__cell" id="CultistCell">Cultist Simulator</div>
         </div>
       </div>
 </div>
@@ -47,8 +47,763 @@
 <button class="spin-button">SPIN</button>
 </div>
 
+<div id="TerrariaModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-game">
+      <!--<span id="closeTerrariaModal" class="close">&times;</span> -->
+        <p style="text-align: left; font-size: 16pt; margin:0; margin-bottom: 10px; padding-left:3px;">
+            Terraria</p>
+
+      
+        <table class="userPlayTimeTable">
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='steam://run/105600';">PLAY</button>
+            </td>
+            <td class="leftCell">
+              TIME PLAYED
+            </td>
+            <td>
+              769 hours
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='https://store.steampowered.com/app/105600/'">INFO</button>
+            </td>
+            <td class="leftCell">
+              LAST PLAYED
+            </td>
+            <td>
+              12/6/2018
+            </td>
+          </tr>
+        </table>
+        <p>  </p>
+      
+    </div>
+  
+</div>
+
+<div id="StellarisModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-game">
+      <!--<span id="closeTerrariaModal" class="close">&times;</span> -->
+        <p style="text-align: left; font-size: 16pt; margin:0; margin-bottom: 10px; padding-left:3px;">
+            Stellaris</p>
+
+      
+        <table class="userPlayTimeTable">
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='steam://run/281990';">PLAY</button>
+            </td>
+            <td class="leftCell">
+              TIME PLAYED
+            </td>
+            <td>
+              331 hours
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='https://store.steampowered.com/app/281990/'">INFO</button>
+            </td>
+            <td class="leftCell">
+              LAST PLAYED
+            </td>
+            <td>
+              12/31/2018
+            </td>
+          </tr>
+        </table>
+        <p>  </p>
+      
+    </div>
+  
+</div>
+
+<div id="CivModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-game">
+      <!--<span id="closeTerrariaModal" class="close">&times;</span> -->
+        <p style="text-align: left; font-size: 16pt; margin:0; margin-bottom: 10px; padding-left:3px;">
+            Sid Meier's Civilization V</p>
+
+      
+        <table class="userPlayTimeTable">
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='steam://run/8930';">PLAY</button>
+            </td>
+            <td class="leftCell">
+              TIME PLAYED
+            </td>
+            <td>
+              223 hours
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='https://store.steampowered.com/app/8930/'">INFO</button>
+            </td>
+            <td class="leftCell">
+              LAST PLAYED
+            </td>
+            <td>
+              5/27/2012
+            </td>
+          </tr>
+        </table>
+        <p>  </p>
+      
+    </div>
+  
+</div>
+
+<div id="MHWModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-game">
+      <!--<span id="closeTerrariaModal" class="close">&times;</span> -->
+        <p style="text-align: left; font-size: 16pt; margin:0; margin-bottom: 10px; padding-left:3px;">
+            MONSTER HUNTER: WORLD</p>
+
+      
+        <table class="userPlayTimeTable">
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='steam://run/582010';">PLAY</button>
+            </td>
+            <td class="leftCell">
+              TIME PLAYED
+            </td>
+            <td>
+              153 hours
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='https://store.steampowered.com/app/582010/'">INFO</button>
+            </td>
+            <td class="leftCell">
+              LAST PLAYED
+            </td>
+            <td>
+              12/31/2018
+            </td>
+          </tr>
+        </table>
+        <p>  </p>
+      
+    </div>
+  
+</div>
+
+<div id="ESVModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-game">
+      <!--<span id="closeTerrariaModal" class="close">&times;</span> -->
+        <p style="text-align: left; font-size: 16pt; margin:0; margin-bottom: 10px; padding-left:3px;">
+            The Elder Scrolls V: Skyrim</p>
+
+      
+        <table class="userPlayTimeTable">
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='steam://run/72850';">PLAY</button>
+            </td>
+            <td class="leftCell">
+              TIME PLAYED
+            </td>
+            <td>
+              120 hours
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='https://store.steampowered.com/app/72850/'">INFO</button>
+            </td>
+            <td class="leftCell">
+              LAST PLAYED
+            </td>
+            <td>
+              4/7/2016
+            </td>
+          </tr>
+        </table>
+        <p>  </p>
+      
+    </div>
+  
+</div>
+
+<div id="DOS2Modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-game">
+      <!--<span id="closeTerrariaModal" class="close">&times;</span> -->
+        <p style="text-align: left; font-size: 16pt; margin:0; margin-bottom: 10px; padding-left:3px;">
+            Divinity: Original Sin 2</p>
+
+      
+        <table class="userPlayTimeTable">
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='steam://run/435150';">PLAY</button>
+            </td>
+            <td class="leftCell">
+              TIME PLAYED
+            </td>
+            <td>
+              98 hours
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='https://store.steampowered.com/app/435150/'">INFO</button>
+            </td>
+            <td class="leftCell">
+              LAST PLAYED
+            </td>
+            <td>
+              1/5/2019
+            </td>
+          </tr>
+        </table>
+        <p>  </p>
+      
+    </div>
+  
+</div>
+
+<div id="RocketModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-game">
+      <!--<span id="closeTerrariaModal" class="close">&times;</span> -->
+        <p style="text-align: left; font-size: 16pt; margin:0; margin-bottom: 10px; padding-left:3px;">
+            Rocket League</p>
+
+      
+        <table class="userPlayTimeTable">
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='steam://run/252950';">PLAY</button>
+            </td>
+            <td class="leftCell">
+              TIME PLAYED
+            </td>
+            <td>
+              90 hours
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='https://store.steampowered.com/app/252950/'">INFO</button>
+            </td>
+            <td class="leftCell">
+              LAST PLAYED
+            </td>
+            <td>
+              1/27/2019
+            </td>
+          </tr>
+        </table>
+        <p>  </p>
+      
+    </div>
+  
+</div>
+
+<div id="BL2Modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-game">
+      <!--<span id="closeTerrariaModal" class="close">&times;</span> -->
+        <p style="text-align: left; font-size: 16pt; margin:0; margin-bottom: 10px; padding-left:3px;">
+            Borderlands 2</p>
+
+      
+        <table class="userPlayTimeTable">
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='steam://run/49520';">PLAY</button>
+            </td>
+            <td class="leftCell">
+              TIME PLAYED
+            </td>
+            <td>
+              70 hours
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='https://store.steampowered.com/app/49520/'">INFO</button>
+            </td>
+            <td class="leftCell">
+              LAST PLAYED
+            </td>
+            <td>
+              1/2/2019
+            </td>
+          </tr>
+        </table>
+        <p>  </p>
+      
+    </div>
+  
+</div>
+
+<div id="ELModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-game">
+      <!--<span id="closeTerrariaModal" class="close">&times;</span> -->
+        <p style="text-align: left; font-size: 16pt; margin:0; margin-bottom: 10px; padding-left:3px;">
+            Endless Legend</p>
+
+      
+        <table class="userPlayTimeTable">
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='steam://run/289130';">PLAY</button>
+            </td>
+            <td class="leftCell">
+              TIME PLAYED
+            </td>
+            <td>
+              68 hours
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='https://store.steampowered.com/app/289130/'">INFO</button>
+            </td>
+            <td class="leftCell">
+              LAST PLAYED
+            </td>
+            <td>
+              11/1/2018
+            </td>
+          </tr>
+        </table>
+        <p>  </p>
+      
+    </div>
+  
+</div>
+
+<div id="P2Modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-game">
+      <!--<span id="closeTerrariaModal" class="close">&times;</span> -->
+        <p style="text-align: left; font-size: 16pt; margin:0; margin-bottom: 10px; padding-left:3px;">
+            Portal 2</p>
+
+      
+        <table class="userPlayTimeTable">
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='steam://run/620';">PLAY</button>
+            </td>
+            <td class="leftCell">
+              TIME PLAYED
+            </td>
+            <td>
+              67 hours
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='https://store.steampowered.com/app/620/'">INFO</button>
+            </td>
+            <td class="leftCell">
+              LAST PLAYED
+            </td>
+            <td>
+              4/19/2016
+            </td>
+          </tr>
+        </table>
+        <p>  </p>
+      
+    </div>
+  
+</div>
+
+<div id="NS2Modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-game">
+      <!--<span id="closeTerrariaModal" class="close">&times;</span> -->
+        <p style="text-align: left; font-size: 16pt; margin:0; margin-bottom: 10px; padding-left:3px;">
+            Natural Selection 2</p>
+
+      
+        <table class="userPlayTimeTable">
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='steam://run/4920';">PLAY</button>
+            </td>
+            <td class="leftCell">
+              TIME PLAYED
+            </td>
+            <td>
+              65 hours
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='https://store.steampowered.com/app/4920/'">INFO</button>
+            </td>
+            <td class="leftCell">
+              LAST PLAYED
+            </td>
+            <td>
+              9/8/2016
+            </td>
+          </tr>
+        </table>
+        <p>  </p>
+      
+    </div>
+  
+</div>
+
+<div id="WMotAModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-game">
+      <!--<span id="closeTerrariaModal" class="close">&times;</span> -->
+        <p style="text-align: left; font-size: 16pt; margin:0; margin-bottom: 10px; padding-left:3px;">
+            Warlock - Master of the Arcane</p>
+
+      
+        <table class="userPlayTimeTable">
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='steam://run/203630';">PLAY</button>
+            </td>
+            <td class="leftCell">
+              TIME PLAYED
+            </td>
+            <td>
+              60 hours
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='https://store.steampowered.com/app/203630/'">INFO</button>
+            </td>
+            <td class="leftCell">
+              LAST PLAYED
+            </td>
+            <td>
+              8/31/2013
+            </td>
+          </tr>
+        </table>
+        <p>  </p>
+      
+    </div>
+  
+</div>
+
+<div id="StSModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-game">
+      <!--<span id="closeTerrariaModal" class="close">&times;</span> -->
+        <p style="text-align: left; font-size: 16pt; margin:0; margin-bottom: 10px; padding-left:3px;">
+            Slay the Spire</p>
+
+      
+        <table class="userPlayTimeTable">
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='steam://run/646570';">PLAY</button>
+            </td>
+            <td class="leftCell">
+              TIME PLAYED
+            </td>
+            <td>
+              59 hours
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='https://store.steampowered.com/app/646570/'">INFO</button>
+            </td>
+            <td class="leftCell">
+              LAST PLAYED
+            </td>
+            <td>
+              12/16/2018
+            </td>
+          </tr>
+        </table>
+        <p>  </p>
+      
+    </div>
+  
+</div>
+
+<div id="FTLModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-game">
+      <!--<span id="closeTerrariaModal" class="close">&times;</span> -->
+        <p style="text-align: left; font-size: 16pt; margin:0; margin-bottom: 10px; padding-left:3px;">
+            FTL: Faster Than Light</p>
+
+      
+        <table class="userPlayTimeTable">
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='steam://run/212680';">PLAY</button>
+            </td>
+            <td class="leftCell">
+              TIME PLAYED
+            </td>
+            <td>
+              59 hours
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='https://store.steampowered.com/app/212680/'">INFO</button>
+            </td>
+            <td class="leftCell">
+              LAST PLAYED
+            </td>
+            <td>
+              11/10/2018
+            </td>
+          </tr>
+        </table>
+        <p>  </p>
+      
+    </div>
+  
+</div>
+
+<div id="CultistModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-game">
+      <!--<span id="closeTerrariaModal" class="close">&times;</span> -->
+        <p style="text-align: left; font-size: 16pt; margin:0; margin-bottom: 10px; padding-left:3px;">
+            Cultist Simulator</p>
+
+      
+        <table class="userPlayTimeTable">
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='steam://run/718670';">PLAY</button>
+            </td>
+            <td class="leftCell">
+              TIME PLAYED
+            </td>
+            <td>
+              55 hours
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">
+              <button class="modal-game-button" onclick="location.href='https://store.steampowered.com/app/718670/'">INFO</button>
+            </td>
+            <td class="leftCell">
+              LAST PLAYED
+            </td>
+            <td>
+              2/9/2019
+            </td>
+          </tr>
+        </table>
+        <p>  </p>
+      
+    </div>
+  
+</div>
 
 <script>
+
+
+  // Modal dialog code
+
+  var terrariaModal = document.getElementById('TerrariaModal');
+  var terrariaCell = document.getElementById('TerrariaCell');
+
+  terrariaCell.onclick = function() {
+    terrariaModal.style.display = "block";
+  }
+
+  var stellarisModal = document.getElementById('StellarisModal');
+  var stellarisCell = document.getElementById('StellarisCell');
+
+  stellarisCell.onclick = function() {
+    stellarisModal.style.display = "block";
+  }
+
+  var civModal = document.getElementById('CivModal');
+  var civCell = document.getElementById('CivCell');
+
+  civCell.onclick = function() {
+    civModal.style.display = "block";
+  }
+
+  var mhwModal = document.getElementById('MHWModal');
+  var mhwCell = document.getElementById('MHWCell');
+
+  mhwCell.onclick = function() {
+    mhwModal.style.display = "block";
+  }
+
+  var esvModal = document.getElementById('ESVModal');
+  var esvCell = document.getElementById('ESVCell');
+
+  esvCell.onclick = function() {
+    esvModal.style.display = "block";
+  }
+
+  var dos2Modal = document.getElementById('DOS2Modal');
+  var dos2Cell = document.getElementById('DOS2Cell');
+
+  dos2Cell.onclick = function() {
+    dos2Modal.style.display = "block";
+  }
+
+  var rocketModal = document.getElementById('RocketModal');
+  var rocketCell = document.getElementById('RocketCell');
+
+  rocketCell.onclick = function() {
+    rocketModal.style.display = "block";
+  }
+
+  var bl2Modal = document.getElementById('BL2Modal');
+  var bl2Cell = document.getElementById('BL2Cell');
+
+  bl2Cell.onclick = function() {
+    bl2Modal.style.display = "block";
+  }
+
+  var elModal = document.getElementById('ELModal');
+  var elCell = document.getElementById('ELCell');
+
+  elCell.onclick = function() {
+    elModal.style.display = "block";
+  }
+
+  var p2Modal = document.getElementById('P2Modal');
+  var p2Cell = document.getElementById('P2Cell');
+
+  p2Cell.onclick = function() {
+    p2Modal.style.display = "block";
+  }
+
+  var ns2Modal = document.getElementById('NS2Modal');
+  var ns2Cell = document.getElementById('NS2Cell');
+
+  ns2Cell.onclick = function() {
+    ns2Modal.style.display = "block";
+  }
+
+  var wmotaModal = document.getElementById('WMotAModal');
+  var wmotaCell = document.getElementById('WMotACell');
+
+  wmotaCell.onclick = function() {
+    wmotaModal.style.display = "block";
+  }
+
+  var stsModal = document.getElementById('StSModal');
+  var stsCell = document.getElementById('StSCell');
+
+  stsCell.onclick = function() {
+    stsModal.style.display = "block";
+  }
+
+  var ftlModal = document.getElementById('FTLModal');
+  var ftlCell = document.getElementById('FTLCell');
+
+  ftlCell.onclick = function() {
+    ftlModal.style.display = "block";
+  }
+
+  var cultistModal = document.getElementById('CultistModal');
+  var cultistCell = document.getElementById('CultistCell');
+
+  cultistCell.onclick = function() {
+    cultistModal.style.display = "block";
+  }
+
+//terrariaCloser.onclick = function() {
+//  terrariaModal.style.display = "none";
+//}
+
+
+modalList = [terrariaModal, stellarisModal, civModal, mhwModal, esvModal, dos2Modal, rocketModal, bl2Modal, elModal, p2Modal, ns2Modal, wmotaModal, stsModal, ftlModal, cultistModal];
+
+window.onclick = function(event) {
+  if (event.target == terrariaModal) {
+    terrariaModal.style.display = "none";
+  }
+  else if (event.target == stellarisModal) {
+    stellarisModal.style.display = "none";
+  }
+  else if (event.target == civModal) {
+    civModal.style.display = "none";
+  }
+  else if (event.target == mhwModal) {
+    mhwModal.style.display = "none";
+  }
+  else if (event.target == esvModal) {
+    esvModal.style.display = "none";
+  }
+  else if (event.target == dos2Modal) {
+    dos2Modal.style.display = "none";
+  }
+  else if (event.target == rocketModal) {
+    rocketModal.style.display = "none";
+  }
+  else if (event.target == bl2Modal) {
+    bl2Modal.style.display = "none";
+  }
+  else if (event.target == elModal) {
+    elModal.style.display = "none";
+  }
+  else if (event.target == p2Modal) {
+    p2Modal.style.display = "none";
+  }
+  else if (event.target == ns2Modal) {
+    ns2Modal.style.display = "none";
+  }
+  else if (event.target == wmotaModal) {
+    wmotaModal.style.display = "none";
+  }
+  else if (event.target == stsModal) {
+    stsModal.style.display = "none";
+  }
+  else if (event.target == ftlModal) {
+    ftlModal.style.display = "none";
+  }
+  else if (event.target == cultistModal) {
+    cultistModal.style.display = "none";
+  }
+  
+}
+
+function displaySelectedModal(){
+  modalList[selectedIndex].style.display="block";
+}
+
+
+  // Carousel code below
 
         var carousel = document.querySelector('.carousel');
         var cells = carousel.querySelectorAll('.carousel__cell');
@@ -88,6 +843,7 @@
             
             if (i == selectedIndex){
                 setTimeout(highlightSelectedCell, 1000);
+                setTimeout(displaySelectedModal, 1500);
             }
           }
           for (var i = 0; i < visibleIndices.length; i++){
@@ -120,13 +876,15 @@
             var cellAngle = theta * i;
             cell.style.transform = rotateFn + '(' + cellAngle + 'deg) translateZ(' + radius + 'px)';
           }
-        
+          selectedIndex= Math.floor(Math.random() * Math.floor(15));
           rotateCarousel();
         }
         
         rotateFn = 'rotateX';
         
         setupCarousel();
+
+        
         
         
         

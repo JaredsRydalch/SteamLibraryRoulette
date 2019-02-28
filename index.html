@@ -11,18 +11,146 @@
 <div id="header">
      <a href="https://jaredsrydalch.github.io/SteamLibraryRoulette/index.html"> <h1 class="homelink"><img src="favicon.ico" width="26" height="26">  STEAM LIBRARY ROULETTE </h1></a>
         <ul>
-                <li><a class="active" href="https://jaredsrydalch.github.io/SteamLibraryRoulette/index.html">Home</a></li>
-                <li><a href="https://jaredsrydalch.github.io/SteamLibraryRoulette/roulette.html">Spin</a></li>
+                <li class="navli"><a class="active" href="https://jaredsrydalch.github.io/SteamLibraryRoulette/index.html">Home</a></li>
+                <li class="navli"><a href="https://jaredsrydalch.github.io/SteamLibraryRoulette/roulette.html">Spin</a></li>
               </ul>
 </div>
 
-<div id="welcomesplash">
+<div id="welcomesplash"><h2>Welcome to Steam Library Roulette!</h2></div>
 
-    <h2>Welcome to Steam Library Roulette!</h2>
-    <p style="text-align: left;">This site selects a random selection of games from your Steam library for you. </br> Simply set your account to public <a href="javascript:alert('Insert explanation image here (TODO)');" 
-        style="color: gray; font-size: 16px;">What's This?</a> and enter your profile number to begin.</p>
+<div id="infosplash">
 
+    
+    <p style="text-align: center;">This site selects a random selection of games from your Steam library for you. </br> Simply set your account to public 
+        <sup id="publicInfoLink" class="infolink">?</sup> and enter your profile number or custom URL to begin.</p>
+    <div id="communityNumberEntry">
+        <h2>Profile Number: 
+            <sup id="profileLink" class="infolink">?</sup>
+            <input id="profilebox" class="profilebox" type="text">
+            
+    </div>
+    - OR -
+    <div id="customURLEntry">
+        <h2>Custom URL: 
+            <sup id="customURLLink" class="infolink">?</sup>
+            <input id="profilebox" class="profilebox" type="text">
+    </div>
+    <div id="submitButtonDiv">
+
+    <button onclick="location.href='https://jaredsrydalch.github.io/SteamLibraryRoulette/roulette.html' ">SUBMIT</button>
+</div>
 </div>
 
+
+<!-- The Modal -->
+<div id="publicInfoModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span id="closeInfoModal" class="close">&times;</span>
+      <p>How to set your profile to public:
+          <ol>
+              <li>Go to your Steam profile</li>
+              <li>Click the Edit Profile button in the top right</li>
+              <li>Select "My Privacy Settings" on the right</li>
+              <li>Click the dropdown after My Profile: </li>
+              <li>Click "Public" from the dropdown</li>
+              <li>Click the dropdown after Game Details: </li>
+              <li>Click "Public" from the dropdown</li>
+          </ol>
+      </p>
+      <p>Additionally, your game details must be set to public, which can be done
+          on the same page.
+      </p>
+    </div>
+  
+  </div>
+
+  <div id="profileModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span id="closeProfileModal" class="close">&times;</span>
+          <p>If you have not set a custom URL for your profile, you will have a number assigned to your profile.
+          </p>
+          <p>This can be found at the end of https://steamcommunity.com/profiles/XXXXXXXXXXX which displays when viewing your Steam profile.</p>
+          <img src = "https://jaredsrydalch.github.io/SteamLibraryRoulette/HelperProfile.png">
+        </div>
+      
+</div>
+
+<div id="customURLModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span id="closeCustomURLModal" class="close">&times;</span>
+        <p>If you have set a custom URL for your profile, you will use that URL.
+            </p>
+            <p>This can be found at the end of https://steamcommunity.com/id/XXXXXXXXXXX which displays when viewing your Steam profile.</p>
+            <img src = "https://jaredsrydalch.github.io/SteamLibraryRoulette/HelperID.png">  
+    </div>
+    
+    </div>
+
+
+  <script>
+      
+var publicInfoModal = document.getElementById('publicInfoModal');
+
+var profileModal  = document.getElementById('profileModal');
+
+var customURLModal  = document.getElementById('customURLModal');
+
+var publicInfoLink = document.getElementById('publicInfoLink');
+
+var profileLink = document.getElementById('profileLink');
+
+var customURLLink = document.getElementById('customURLLink');
+
+var publicInfoCloser = document.getElementById("closeInfoModal");
+
+var profileCloser = document.getElementById("closeProfileModal");
+
+var customURLCloser = document.getElementById("closeCustomURLModal");
+
+// When the user clicks on the button, open the modal 
+publicInfoLink.onclick = function() {
+  publicInfoModal.style.display = "block";
+}
+
+profileLink.onclick = function() {
+  profileModal.style.display = "block";
+}
+
+customURLLink.onclick = function() {
+  customURLModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+publicInfoCloser.onclick = function() {
+  publicInfoModal.style.display = "none";
+}
+
+profileCloser.onclick = function() {
+  profileModal.style.display = "none";
+}
+
+customURLCloser.onclick = function() {
+  customURLModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == publicInfoModal) {
+    publicInfoModal.style.display = "none";
+  }
+  else if (event.target == profileModal){
+      profileModal.style.display = "none";
+  }
+  else if (event.target == customURLModal){
+      customURLModal.style.display = "none";
+  }
+}
+  </script>
 </body>
 </html>
